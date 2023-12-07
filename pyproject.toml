@@ -28,9 +28,6 @@ packages = [
     { include = "pyppeteer" },
 ]
 include = [
-    "README.md",
-    "LICENSE",
-    "CHANGES.md",
 ]
 exclude = [
     '*/__pycache__',
