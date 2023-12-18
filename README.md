@@ -1,8 +1,13 @@
-### Attention: This repo is unmaintained and has been outside of minor changes for a long time. Please consider [playwright-python](https://github.com/microsoft/playwright-python) as an alternative. 
+### Wrk Fork
+
+This repo have been forked to solve an issue with PantsBuild and collisioning license file.
+The license file have been renamed LICENSE_PYPPETEER to avoid collision.
+
+### Attention: This repo is unmaintained and has been outside of minor changes for a long time. Please consider [playwright-python](https://github.com/microsoft/playwright-python) as an alternative.
+
 If you would like to overhaul this code to bring it up to date, please contact [me](https://github.com/Mattwmaster58)
 
-pyppeteer
-==========
+# pyppeteer
 
 [![PyPI](https://img.shields.io/pypi/v/pyppeteer.svg)](https://pypi.python.org/pypi/pyppeteer)
 [![PyPI version](https://img.shields.io/pypi/pyversions/pyppeteer.svg)](https://pypi.python.org/pypi/pyppeteer)
@@ -14,8 +19,8 @@ _Note: this is a continuation of the [pyppeteer project](https://github.com/miya
 
 Unofficial Python port of [puppeteer](https://github.com/GoogleChrome/puppeteer) JavaScript (headless) chrome/chromium browser automation library.
 
-* Free software: MIT license (including the work distributed under the Apache 2.0 license)
-* Documentation: https://pyppeteer.github.io/pyppeteer/
+- Free software: MIT license (including the work distributed under the Apache 2.0 license)
+- Documentation: https://pyppeteer.github.io/pyppeteer/
 
 ## Installation
 
@@ -24,7 +29,7 @@ pyppeteer requires Python >= 3.6
 Install with `pip` from PyPI:
 
 ```
-pip install pyppeteer
+pip install wrk-pyppeteer
 ```
 
 Or install the latest version from [this github repo](https://github.com/pyppeteer/pyppeteer/):
@@ -42,6 +47,7 @@ Full documentation can be found [here](https://pyppeteer.github.io/pyppeteer/ref
 ### Examples
 
 Open web page and take a screenshot:
+
 ```py
 import asyncio
 from pyppeteer import launch
@@ -57,6 +63,7 @@ asyncio.get_event_loop().run_until_complete(main())
 ```
 
 Evaluate javascript on a page:
+
 ```py
 import asyncio
 from pyppeteer import launch
@@ -106,11 +113,11 @@ browser = await launch(headless=True)
 
 In python, `$` is not a valid identifier. The equivalent methods to Puppeteer's `$`, `$$`, and `$x` methods are listed below, along with some shorthand methods for your convenience:
 
-| puppeteer | pyppeteer              | pyppeteer shorthand |
-|-----------|-------------------------|----------------------|
-| Page.$()  | Page.querySelector()    | Page.J()             |
-| Page.$$() | Page.querySelectorAll() | Page.JJ()            |
-| Page.$x() | Page.xpath()            | Page.Jx()            |
+| puppeteer | pyppeteer               | pyppeteer shorthand |
+| --------- | ----------------------- | ------------------- |
+| Page.$()  | Page.querySelector()    | Page.J()            |
+| Page.$$() | Page.querySelectorAll() | Page.JJ()           |
+| Page.$x() | Page.xpath()            | Page.Jx()           |
 
 ### Arguments of `Page.evaluate()` and `Page.querySelectorEval()`
 

@@ -17,7 +17,7 @@ except ModuleNotFoundError:
     from importlib_metadata import version
 
 try:
-    __version__ = version(__name__)
+    __version__ = version("wrk-pyppeteer")
 except Exception:
     __version__ = None
 
